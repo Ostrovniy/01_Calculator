@@ -6,13 +6,14 @@ from module.simple_calculator.calculator import CalculatorFrame
 class MainApp(tk.Tk):
     def __init__(self):
         super().__init__()
+        self.style_them = ttk.Style("darkly")
 
         self.title('Calculator')
         self.geometry('900x600')
+        self.themename="darkly"
         self.option_add("*tearOff", tk.FALSE)
 
-        tk.Label(self, text='Test').pack()
-        CalculatorFrame(self).pack()
+        CalculatorFrame(self).pack(anchor='nw')
 
 
 
