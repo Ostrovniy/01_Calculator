@@ -1,5 +1,6 @@
 import tkinter as tk
 from tkinter import ttk
+import ttkbootstrap as ttk
 from module.simple_calculator.calculator import CalculatorFrame
 
 class MainApp(tk.Tk):
